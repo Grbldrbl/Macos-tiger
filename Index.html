@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>macOS Tiger Web Desktop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="dock">
+    <img
+      src="eaglercraft-icon.png"
+      alt="Eaglercraft"
+      class="dock-icon"
+      onclick="launchEaglercraft()"
+    />
+  </div>
+
+  <div id="launcher-window" class="window">
+    <div class="title-bar" onmousedown="startDrag(event)">Eaglercraft</div>
+    <div class="content">
+      <p>Click below to launch Eaglercraft in a new tab.</p>
+      <button onclick="launchEaglercraft()">Play</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
